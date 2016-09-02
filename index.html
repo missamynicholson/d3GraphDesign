@@ -1,0 +1,113 @@
+<html>
+	<head>
+		<link href="/assets/s3/blog/stack-overflow/css/style.css" rel="stylesheet" type="text/css">
+		<script src="/assets/s3/blog/stack-overflow/js/chart.min.js"></script>
+		<link rel="icon" type="image/x-icon" href="/static/assets/favicon.ico">
+		<title>Ammit Dashboard</title>
+	</head>
+	<body>
+		<div id="chart-wrapper">
+			<div id="chart">
+				<svg class="chart1" width="260" height="726">
+					<g transform="translate(60,100)">
+						<g class="brush" style="pointer-events: all; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+							<rect class="background" x="0" width="1180" height="466" style="visibility: hidden; cursor: crosshair;"></rect>
+							<rect class="extent" x="0" width="0" height="466" style="cursor: move;"></rect>
+							<g class="resize e" transform="translate(0,0)" style="cursor: ew-resize; display: none;">
+								<rect x="-3" width="3" height="466" style="visibility: hidden;"></rect>
+							</g>
+							<g class="resize w" transform="translate(0,0)" style="cursor: ew-resize; display: none;">
+								<rect x="-3" width="3" height="566" style="visibility: hidden;"></rect>
+							</g>
+						</g>
+						<g>
+							<g class="x axis" transform="translate( 0, 466)" stroke="#3A4145">
+								<g class="tick" transform="translate(50,0)" style="opacity: 1;">
+									<line y2="6" x2="0"></line>
+									<text dy="0.15em" y="9" x="0" dx="-.8em" stroke="#0000ff" transform="rotate(-65)" style="text-anchor: end;">controlAd</text>  //cohort
+								</g>
+								<g class="tick" transform="translate(150,0)" style="opacity: 1;">
+									<line y2="6" x2="0"></line>
+									<text dy="0.15em" y="9" x="0" dx="-.8em" stroke="#ff0000" transform="rotate(-65)" style="text-anchor: end;">higherAd</text> //cohort
+								</g>
+								<path class="domain" d="M0,6V0H1180V6" stroke-width="1" fill="none" stroke="black"></path>
+							</g>
+							<g class="y axis" transform="translate( 0, 0)" stroke="#3A4145">
+
+								<g class="tick" transform="translate(-40,233)" style="opacity: 1;">
+									<line x2="0" y2="0"></line>
+									<text dy=".15em" x="-9" y="0" stroke="#000000" transform="rotate(-90)" style="text-anchor: end;">% Uplift</text>
+								</g>
+
+								<g class="tick" transform="translate(0,466)" style="opacity: 1;">
+									<line x2="-6" y2="0"></line>
+									<text dy=".15em" x="-9" y="0" fill="#c0392b" style="text-anchor: end;">0</text>
+								</g>
+								<g class="tick" transform="translate(0,420)" style="opacity: 1;">
+									<line x2="500" y2="0" style="opacity: 0.25"></line>
+									<text dy=".15em" x="-9" y="0" fill="#c0392b" style="text-anchor: end;">2</text>
+								</g>
+								<g class="tick" transform="translate(0,374)" style="opacity: 1;">
+									<line x2="500" y2="0" style="opacity: 0.25"></line>
+									<text dy=".15em" x="-9" y="0" fill="#c0392b" style="text-anchor: end;">4</text>
+								</g>
+								<g class="tick" transform="translate(0,328)" style="opacity: 1;">
+									<line x2="500" y2="0" style="opacity: 0.25"></line>
+									<text dy=".15em" x="-9" y="0" fill="#c0392b" style="text-anchor: end;">6</text>
+								</g>
+								<g class="tick" transform="translate(0,282)" style="opacity: 1;">
+									<line x2="500" y2="0" style="opacity:0.25"></line>
+									<text dy=".15em" x="-9" y="0" fill="#c0392b" style="text-anchor: end;">8</text>
+								</g>
+								<g class="tick" transform="translate(0,236)" style="opacity: 1;">
+									<line x2="500" y2="0" style="opacity:0.25"></line>
+									<text dy=".15em" x="-9" y="0" fill="#c0392b" style="text-anchor: end;">10</text>
+								</g>
+								<g class="tick" transform="translate(0,190)" style="opacity: 1;">
+									<line x2="500" y2="0" style="opacity:0.25"></line>
+									<text dy=".15em" x="-9" y="0" style="text-anchor: end;">12</text>
+								</g>
+								<g class="tick" transform="translate(0,144)" style="opacity: 1;">
+									<line x2="500" y2="0" style="opacity:0.25"></line>
+									<text dy=".15em" x="-9" y="0" style="text-anchor: end;">14</text>
+								</g>
+								<g class="tick" transform="translate(0,98)" style="opacity: 1;">
+									<line x2="500" y2="0" style="opacity:0.25"></line>
+									<text dy=".15em" x="-9" y="0" style="text-anchor: end;">16</text>
+								</g>
+								<g class="tick" transform="translate(0,52)" style="opacity: 1;">
+									<line x2="500" y2="0" style="opacity:0.25"></line>
+									<text dy=".15em" x="-9" y="0" style="text-anchor: end;">18</text>
+								</g>
+								<g class="tick" transform="translate(0,0)" style="opacity: 1;">
+									<line x2="500" y2="0" style="opacity:0.25"></line>
+									<text dy=".15em" x="-9" y="0" style="text-anchor: end;">20</text>
+								</g>
+								<path class="domain" d="M-6,0H0V466H-6" stroke-width="1" fill="none" stroke="black"></path>
+								</g>
+							</g>
+						<g>
+							<clipPath id="clip">
+								<rect x="-2.5" width="1180" height="466"></rect>
+							</clipPath>
+							<g class="lines-group-0" clip-path="url(#clip)">
+								<line class="vertical-line" x1="50" y1="18.7351169599497" x2="50" y2="212.2773283949578" stroke-width="2" stroke="#0000ff" opacity="0.5" style="stroke-dasharray: 3,3"></line>
+								<line class="top-horizontal-line" x1="46" y1="18.7351169599497" x2="54" y2="18.7351169599497" stroke-width="2" stroke="#0000ff"></line>
+								<line class="bottom-horizontal-line" x1="46" y1="212.2773283949578" x2="54" y2="212.2773283949578" stroke-width="2" stroke="#0000ff"></line>
+								<circle class="concrete-value-circle" cx="50" cy="120.35328328569088" r="5" fill="#0000ff"></circle>
+							</g>
+							<g class="lines-group-1" clip-path="url(#clip)">
+								<line class="vertical-line" x1="150" y1="156.813725790471445" x2="150" y2="337.4091955518148" stroke-width="2" stroke="#ff0000" opacity="0.5" style="stroke-dasharray: 3,3"></line>
+								<line class="top-horizontal-line" x1="146" y1="156.813725790471445" x2="154" y2="156.813725790471445" stroke-width="2" stroke="#ff0000"></line>
+								<line class="bottom-horizontal-line" x1="146" y1="337.4091955518148" x2="154" y2="337.4091955518148" stroke-width="2" stroke="#ff0000"></line>
+								<circle class="concrete-value-circle" cx="150" cy="242.98820617740697" r="5" fill="#ff0000"></circle>
+							</g>
+						</g>
+					</g>
+				</svg>
+
+			</div>
+		</div>
+
+
+</body></html>
